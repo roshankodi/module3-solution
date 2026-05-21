@@ -8,114 +8,120 @@
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
 
 <nav class="navbar navbar-default">
-<div class="container">
+  <div class="container">
 
-<div class="navbar-header">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Food, LLC</a>
 
-<a class="navbar-brand" href="#">
-Food, LLC
-</a>
+      <button type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsable-nav"
+              aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
-<button type="button"
-class="navbar-toggle collapsed"
-data-toggle="collapse"
-data-target="#collapsable-nav">
+    <div id="collapsable-nav" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right visible-xs text-center">
+        <li><a href="#chicken">Chicken</a></li>
+        <li><a href="#beef">Beef</a></li>
+        <li><a href="#sushi">Sushi</a></li>
+      </ul>
+    </div>
 
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-
-</button>
-
-</div>
-
-<div id="collapsable-nav" class="collapse navbar-collapse">
-
-<ul class="nav navbar-nav navbar-right visible-xs text-center">
-
-<li><a href="#chicken">Chicken</a></li>
-<li><a href="#beef">Beef</a></li>
-<li><a href="#sushi">Sushi</a></li>
-
-</ul>
-
-</div>
-
-</div>
+  </div>
 </nav>
 
-<h1 class="text-center">Our Menu</h1>
+<div class="container main-wrap">
+  <h1 class="text-center page-title">Our Menu</h1>
 
-<div class="container">
+  <div class="row">
 
-<div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <section class="menu-card" id="chicken">
+        <h2 class="menu-title chicken-title">Chicken</h2>
+        <p class="menu-subtitle">Poultry Classics</p>
 
-<div class="col-md-4 col-sm-6 col-xs-12">
+        <p class="menu-intro">
+          Tender, seasoned chicken dishes inspired by comforting home-style cooking,
+          with bold marinades, slow simmered sauces, and crisp finishing touches.
+        </p>
 
-<div class="menu-box" id="chicken">
+        <ul class="dish-list">
+          <li><span>Herb Roast Chicken</span><span>₹320</span></li>
+          <li><span>Spicy Chicken Curry</span><span>₹290</span></li>
+          <li><span>Garlic Butter Chicken</span><span>₹340</span></li>
+          <li><span>Chicken Tikka Grill</span><span>₹310</span></li>
+          <li><span>Lemon Pepper Wings</span><span>₹260</span></li>
+          <li><span>Honey Glazed Drumsticks</span><span>₹275</span></li>
+        </ul>
 
-<div class="title chicken-title">
-Chicken
-</div>
+        <p class="menu-note">
+          Best served with rice, fresh salad, or warm flatbread.
+        </p>
+      </section>
+    </div>
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Cras interdum pretium sodales. Curabitur vel leo nec elit
-luctus interdum. Aliquam porttitor erat eget consequat
-interdum.
-</p>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <section class="menu-card" id="beef">
+        <h2 class="menu-title beef-title">Beef</h2>
+        <p class="menu-subtitle">Premium Cuts</p>
 
-</div>
+        <p class="menu-intro">
+          Rich, hearty beef preparations cooked for deep flavor, featuring seared,
+          braised, and slow-cooked recipes with comforting spice blends.
+        </p>
 
-</div>
+        <ul class="dish-list">
+          <li><span>Classic Beef Stew</span><span>₹360</span></li>
+          <li><span>Ribeye Steak</span><span>₹590</span></li>
+          <li><span>Wagyu Burger</span><span>₹420</span></li>
+          <li><span>Braised Short Ribs</span><span>₹510</span></li>
+          <li><span>Beef Pepper Fry</span><span>₹330</span></li>
+          <li><span>Smash Burger Duo</span><span>₹390</span></li>
+        </ul>
 
-<div class="col-md-4 col-sm-6 col-xs-12">
+        <p class="menu-note">
+          Great with mashed potatoes, roasted vegetables, or buttered buns.
+        </p>
+      </section>
+    </div>
 
-<div class="menu-box" id="beef">
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <section class="menu-card" id="sushi">
+        <h2 class="menu-title sushi-title">Sushi</h2>
+        <p class="menu-subtitle">Ocean Fresh</p>
 
-<div class="title beef-title">
-Beef
-</div>
+        <p class="menu-intro">
+          Fresh rice rolls and delicate Japanese bites prepared with clean flavors,
+          crisp vegetables, and premium seafood-inspired combinations.
+        </p>
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Cras interdum pretium sodales. Curabitur vel leo nec elit
-luctus interdum. Aliquam porttitor erat eget consequat
-interdum.
-</p>
+        <ul class="dish-list">
+          <li><span>Salmon Nigiri</span><span>₹180</span></li>
+          <li><span>Dragon Roll</span><span>₹320</span></li>
+          <li><span>Spicy Tuna Roll</span><span>₹240</span></li>
+          <li><span>Rainbow Roll</span><span>₹350</span></li>
+          <li><span>Avocado Maki</span><span>₹160</span></li>
+          <li><span>Vegetable Sushi Set</span><span>₹210</span></li>
+        </ul>
 
-</div>
+        <p class="menu-note">
+          Perfect with soy sauce, wasabi, and pickled ginger.
+        </p>
+      </section>
+    </div>
 
-</div>
-
-<div class="col-md-4 col-sm-12 col-xs-12">
-
-<div class="menu-box" id="sushi">
-
-<div class="title sushi-title">
-Sushi
-</div>
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Cras interdum pretium sodales. Curabitur vel leo nec elit
-luctus interdum. Aliquam porttitor erat eget consequat
-interdum.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </div>
 
 <script src="js/jquery-2.1.4.min.js"></script>
