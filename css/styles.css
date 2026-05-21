@@ -1,0 +1,37 @@
+body{
+margin:0;
+padding:0;
+font-family:Arial,sans-serif;
+}
+
+.navbar{
+margin-bottom:20px;
+}
+
+.navbar-brand{
+font-size:30px;
+font-weight:bold;
+}
+
+#collapsable-nav{
+background:#dddddd;
+}
+
+#collapsable-nav li{
+border:1px solid #999;
+}
+
+#collapsable-nav a{
+color:black;
+}
+
+.menu-section{
+background:#e5e5e5;
+padding:20px;
+min-height:1000px;
+margin-bottom:20px;
+}
+
+.menu-section h3{
+margin-top:0;
+}
