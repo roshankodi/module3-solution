@@ -1,148 +1,242 @@
 body{
-  background:#f6f1ea;
-  font-family:Georgia, "Times New Roman", serif;
-  color:#222;
+margin:0;
+padding:0;
+font-family:'Segoe UI',Arial,sans-serif;
+background:linear-gradient(135deg,#f5f7fa,#e8ecef);
+color:#222;
 }
 
+/* NAVBAR */
+
 .navbar{
-  border-radius:0;
-  margin-bottom:0;
-  border:0;
-  background:#ece9e4;
+border:none;
+border-radius:0;
+margin-bottom:0;
+background:linear-gradient(to right,#1e293b,#334155);
+padding:8px;
+box-shadow:0 3px 15px rgba(0,0,0,.15);
 }
 
 .navbar-brand{
-  font-size:34px;
-  font-weight:700;
-  color:#4a4a4a !important;
-  padding-top:18px;
-  padding-bottom:18px;
+font-size:36px;
+font-weight:700;
+color:white !important;
+letter-spacing:1px;
 }
 
 .navbar-toggle{
-  margin-top:16px;
+border:none;
+background:white;
+}
+
+.navbar-toggle:hover{
+background:#ddd !important;
 }
 
 #collapsable-nav{
-  background:#ece9e4;
-}
-
-#collapsable-nav li{
-  border-top:1px solid #c9c3bb;
+background:#334155;
 }
 
 #collapsable-nav a{
-  color:#333;
-  font-size:18px;
-  padding:12px 15px;
+color:white !important;
+font-size:18px;
 }
 
-.main-wrap{
-  padding-top:25px;
-  padding-bottom:30px;
+#collapsable-nav li{
+border-bottom:1px solid rgba(255,255,255,.2);
 }
+
+/* PAGE TITLE */
 
 .page-title{
-  font-size:48px;
-  font-weight:700;
-  margin:10px 0 35px;
-  color:#222;
+font-size:60px;
+font-weight:800;
+margin-top:40px;
+margin-bottom:50px;
+text-transform:uppercase;
+letter-spacing:2px;
+color:#1e293b;
 }
+
+/* CARDS */
 
 .menu-card{
-  position:relative;
-  background:#fff;
-  border:1px solid #d7cdc2;
-  box-shadow:0 2px 10px rgba(0,0,0,0.04);
-  padding:72px 26px 28px;
-  margin-bottom:30px;
-  min-height:680px;
+
+background:white;
+
+border-radius:20px;
+
+padding:35px;
+
+margin-bottom:35px;
+
+min-height:700px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+
+transition:.4s;
+overflow:hidden;
+position:relative;
 }
 
+.menu-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:
+0 20px 35px rgba(0,0,0,.15);
+
+}
+
+/* TOP COLOR BAR */
+
+.menu-card:before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+height:8px;
+width:100%;
+
+}
+
+#chicken:before{
+background:#e67e22;
+}
+
+#beef:before{
+background:#e74c3c;
+}
+
+#sushi:before{
+background:#16a085;
+}
+
+/* TITLES */
+
 .menu-title{
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  text-align:center;
-  margin:0;
-  padding:18px 12px 10px;
-  font-size:34px;
-  font-weight:700;
-  background:transparent;
+
+font-size:42px;
+font-weight:800;
+text-align:center;
+margin-bottom:10px;
 }
 
 .chicken-title{
-  color:#b4532a;
+color:#e67e22;
 }
 
 .beef-title{
-  color:#233a7a;
+color:#c0392b;
 }
 
 .sushi-title{
-  color:#5b7f4a;
+color:#16a085;
 }
 
 .menu-subtitle{
-  text-align:center;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  font-size:14px;
-  margin:0 0 22px;
-  color:#666;
+
+text-align:center;
+
+text-transform:uppercase;
+
+letter-spacing:5px;
+
+font-size:13px;
+
+color:#777;
+
+margin-bottom:30px;
 }
+
+/* TEXT */
 
 .menu-intro{
-  font-size:18px;
-  line-height:1.7;
-  margin-bottom:24px;
-  color:#2d2d2d;
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#444;
+
+margin-bottom:30px;
 }
 
+/* FOOD LIST */
+
 .dish-list{
-  list-style:none;
-  padding:0;
-  margin:0 0 24px;
+
+list-style:none;
+
+padding:0;
 }
 
 .dish-list li{
-  display:flex;
-  justify-content:space-between;
-  align-items:baseline;
-  padding:10px 0;
-  border-bottom:1px dashed #e2ddd6;
-  font-size:17px;
+
+display:flex;
+
+justify-content:space-between;
+
+padding:14px 0;
+
+border-bottom:1px solid #eee;
+
+font-size:18px;
+
+transition:.3s;
 }
 
-.dish-list li span:first-child{
-  font-weight:700;
+.dish-list li:hover{
+
+padding-left:8px;
+
+background:#fafafa;
 }
 
-.dish-list li span:last-child{
-  color:#8b6b49;
-  white-space:nowrap;
-  padding-left:12px;
+.dish-list span:first-child{
+
+font-weight:600;
+}
+
+.dish-list span:last-child{
+
+font-weight:700;
+color:#666;
 }
 
 .menu-note{
-  font-size:17px;
-  line-height:1.7;
-  margin:0;
-  color:#4d4d4d;
+
+margin-top:25px;
+
+font-style:italic;
+
+color:#666;
+
+line-height:1.7;
 }
 
-@media (max-width: 767px){
-  .page-title{
-    font-size:40px;
-    margin-bottom:25px;
-  }
+/* MOBILE */
 
-  .menu-card{
-    min-height:auto;
-  }
+@media(max-width:767px){
 
-  .navbar-brand{
-    font-size:28px;
-  }
+.page-title{
+
+font-size:42px;
+}
+
+.menu-card{
+
+min-height:auto;
+}
+
+.navbar-brand{
+
+font-size:28px;
+}
+
 }
