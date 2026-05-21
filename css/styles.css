@@ -5,16 +5,18 @@ font-family:Arial,sans-serif;
 }
 
 .navbar{
-margin-bottom:20px;
+margin-bottom:0;
+border-radius:0;
 }
 
 .navbar-brand{
-font-size:30px;
+font-size:35px;
 font-weight:bold;
+padding-top:15px;
 }
 
 #collapsable-nav{
-background:#dddddd;
+background:#f2f2f2;
 }
 
 #collapsable-nav li{
@@ -23,15 +25,27 @@ border:1px solid #999;
 
 #collapsable-nav a{
 color:black;
+font-size:18px;
+}
+
+h1{
+margin-top:30px;
+margin-bottom:30px;
 }
 
 .menu-section{
-background:#e5e5e5;
+background:#d9d9d9;
 padding:20px;
 min-height:1000px;
-margin-bottom:20px;
+margin:20px;
 }
 
 .menu-section h3{
 margin-top:0;
+font-size:30px;
+}
+
+.menu-section p{
+font-size:18px;
+line-height:1.6;
 }
